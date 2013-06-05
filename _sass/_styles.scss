@@ -6,3 +6,22 @@
  * Add your site styles here. Break things out to additional partials if you'd like
  * and add them in import.scss
  */
+img {width:100%;box-shadow:0px 0px 8px 3px #ccc;margin:20px 0;}
+.cell {max-width:640px;margin:0 auto;}
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
