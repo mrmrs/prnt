@@ -6,8 +6,30 @@
  * Add your site styles here. Break things out to additional partials if you'd like
  * and add them in import.scss
  */
-img {width:100%;box-shadow:0px 0px 8px 3px #ccc;margin:20px 0;}
-.cell {max-width:640px;margin:0 auto;}
+* {box-sizing:border-box;}
+img {max-width:100%;width:100%;margin:0;}
+div {margin:0;padding:0;width:100%;}
+.cell {width:100%;overflow:hidden;float:left;}
+.landscape {width:100%;overflow:hidden;float:left;}
+.landscape-short {width:100%;overflow:hidden;float:left;}
+
+.ct {text-align:center;}
+
+.text-link {text-decoration:none;}
+.content {max-width:720px; margin:0 auto;padding:20px;}
+body {background:#eee;color:#888;font-family:"proxima-nova";}
+a {color:#fff;text-decoration:none;}
+.blk {color:#111;background:#fff;margin-bottom:0;padding:20px;}
+.full-bleed {
+  background-image:url(https://s3-us-west-2.amazonaws.com/prnt/hw-headb.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  margin:0;
+}
+
+.no-margin{margin:0;padding:20px;}
+.text-link {color:#111122;}
+
 .cf:before,
 .cf:after {
     content: " "; /* 1 */

@@ -9,6 +9,7 @@
 
 .serif      { }
 .sans-serif { } 
+.headline { font-family:"acta-poster-swashes"; }
 
 /* Headers
    ========================================================================== */
@@ -23,7 +24,7 @@ h6,.h6 { font-size: $font-size-6; }
 
 /* Copy
    ========================================================================== */
-
+.headline {font-size:$font-size-1;}
 .intro {  font-size: $font-size-3;}
 p {       font-size: $font-size-4;}
 

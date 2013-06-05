@@ -8,3 +8,23 @@
 */
    
 
+@include breakpoint(tablet) {
+  .cell {
+    height:0;
+    width:50%;
+    padding-bottom:70%;
+  }
+  .headline {font-size:$font-size-headline-tablet;}
+}
+
+@include breakpoint(desktop) {
+  .cell{
+    height:0;
+    width:25%;
+    padding-bottom:35%;
+  }
+  .landscape {height:0;padding-bottom:35%;width:50%;}
+  .landscape-short {height:0;padding-bottom:32%;width:50%;}
+  .headline {font-size:$font-size-headline;}
+}
+

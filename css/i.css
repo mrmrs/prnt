@@ -368,13 +368,6 @@ table {
   border-spacing: 0; }
 
 /* ==========================================================================
-   GRID
-   ========================================================================== */
-/*
-  I use different grid systems depending on my needs, so nkd doesn't assume
-  anything here.
-*/
-/* ==========================================================================
    TYPE 
 
    - Fonts
@@ -382,6 +375,9 @@ table {
    - Copy
 
    ========================================================================== */
+.headline {
+  font-family: "acta-poster-swashes"; }
+
 /* Headers
    ========================================================================== */
 h1, .h1 {
@@ -404,6 +400,9 @@ h6, .h6 {
 
 /* Copy
    ========================================================================== */
+.headline {
+  font-size: 64px; }
+
 .intro {
   font-size: 32px; }
 
@@ -462,14 +461,72 @@ p {
  * Add your site styles here. Break things out to additional partials if you'd like
  * and add them in import.scss
  */
+* {
+  box-sizing: border-box; }
+
 img {
+  max-width: 100%;
   width: 100%;
-  box-shadow: 0px 0px 8px 3px #ccc;
-  margin: 20px 0; }
+  margin: 0; }
+
+div {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
 
 .cell {
-  max-width: 640px;
-  margin: 0 auto; }
+  width: 100%;
+  overflow: hidden;
+  float: left; }
+
+.landscape {
+  width: 100%;
+  overflow: hidden;
+  float: left; }
+
+.landscape-short {
+  width: 100%;
+  overflow: hidden;
+  float: left; }
+
+.ct {
+  text-align: center; }
+
+.text-link {
+  text-decoration: none; }
+
+.content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px; }
+
+body {
+  background: #eee;
+  color: #888;
+  font-family: "proxima-nova"; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+.blk {
+  color: #111;
+  background: #fff;
+  margin-bottom: 0;
+  padding: 20px; }
+
+.full-bleed {
+  background-image: url(https://s3-us-west-2.amazonaws.com/prnt/hw-headb.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0; }
+
+.no-margin {
+  margin: 0;
+  padding: 20px; }
+
+.text-link {
+  color: #111122; }
 
 .cf:before,
 .cf:after {
@@ -487,3 +544,37 @@ img {
  */
 .cf {
   *zoom: 1; }
+
+/* ==========================================================================
+   GRID
+   ========================================================================== */
+/*
+  I use different grid systems depending on my needs, so nkd doesn't assume
+  anything here.
+*/
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  .cell {
+    height: 0;
+    width: 50%;
+    padding-bottom: 70%; }
+
+  .headline {
+    font-size: 128px; } }
+@media screen and (min-width: 1024px) {
+  .cell {
+    height: 0;
+    width: 25%;
+    padding-bottom: 35%; }
+
+  .landscape {
+    height: 0;
+    padding-bottom: 35%;
+    width: 50%; }
+
+  .landscape-short {
+    height: 0;
+    padding-bottom: 32%;
+    width: 50%; }
+
+  .headline {
+    font-size: 256px; } }
