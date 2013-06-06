@@ -12,13 +12,13 @@ div {margin:0;padding:0;width:100%;}
 .cell {width:100%;overflow:hidden;float:left;}
 .landscape {width:100%;overflow:hidden;float:left;}
 .landscape-short {width:100%;overflow:hidden;float:left;}
-
+.small {font-size:16px;}
 .ct {text-align:center;}
 
 .text-link {text-decoration:none;}
 .content {max-width:720px; margin:0 auto;padding:20px;}
-body {background:#eee;color:#888;font-family:"proxima-nova";}
-a {color:#fff;text-decoration:none;}
+body {background:#fff;color:#777;font-family:"proxima-nova";}
+a {color:#111;text-decoration:none;}
 .blk {color:#111;background:#fff;margin-bottom:0;padding:20px;}
 .full-bleed {
   background-image:url(https://s3-us-west-2.amazonaws.com/prnt/hw-headb.jpg);
@@ -47,3 +47,16 @@ a {color:#fff;text-decoration:none;}
 .cf {
     *zoom: 1;
 }
+
+.site-footer {
+  border-top:4px solid #ddd;
+  border-bottom:4px solid #ddd;
+  margin-top:-5px;
+  padding:40px 0;
+  a {-webkit-transition:color .4s; }
+  a:hover {
+    color:#E80C7A;
+    -webkit-transition:color .4s; 
+  }
+}
+
